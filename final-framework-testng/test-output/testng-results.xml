@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101183" started-at="2018-12-21T10:46:39Z" finished-at="2018-12-21T10:48:20Z">
+  <suite name="Default suite" duration-ms="116367" started-at="2018-12-22T10:32:34Z" finished-at="2018-12-22T10:34:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="101183" started-at="2018-12-21T10:46:39Z" finished-at="2018-12-21T10:48:20Z">
+    <test name="Default test" duration-ms="116367" started-at="2018-12-22T10:32:34Z" finished-at="2018-12-22T10:34:30Z">
       <class name="com.training.sanity.tests.RETC_003">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="setUpBeforeClass" is-config="true" duration-ms="57889" started-at="2018-12-21T10:46:39Z" finished-at="2018-12-21T10:47:37Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="setUpBeforeClass" is-config="true" duration-ms="74038" started-at="2018-12-22T10:32:34Z" finished-at="2018-12-22T10:33:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="validLoginTest" duration-ms="5050" started-at="2018-12-21T10:47:37Z" finished-at="2018-12-21T10:47:42Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="validLoginTest" duration-ms="4100" started-at="2018-12-22T10:33:48Z" finished-at="2018-12-22T10:33:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="tearDown" is-config="true" duration-ms="1000" started-at="2018-12-21T10:47:42Z" finished-at="2018-12-21T10:47:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="tearDown" is-config="true" duration-ms="1001" started-at="2018-12-22T10:33:52Z" finished-at="2018-12-22T10:33:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="validPasswordTest()[pri:2, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="validPasswordTest" duration-ms="30330" started-at="2018-12-21T10:47:43Z" finished-at="2018-12-21T10:48:13Z">
+        <test-method status="FAIL" signature="validPasswordTest()[pri:2, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="validPasswordTest" duration-ms="30297" started-at="2018-12-22T10:33:53Z" finished-at="2018-12-22T10:34:23Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="resetpass-button"]"}
@@ -28,10 +28,10 @@
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-F6ONNM9', ip: '9.85.68.200', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'DESKTOP-F6ONNM9', ip: '9.85.83.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49247}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\AMRITA~1\AppData\Local\Temp\scoped_dir11020_9449}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cb80468b374489f01976db5137f25bdc
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57452}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\AMRITA~1\AppData\Local\Temp\scoped_dir10168_30683}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6d8c90fd755a8894094aa54704df097b
 *** Element info: {Using=xpath, value=//*[@id="resetpass-button"]}]]>
             </message>
             <full-stacktrace>
@@ -41,10 +41,10 @@ Session ID: cb80468b374489f01976db5137f25bdc
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-F6ONNM9', ip: '9.85.68.200', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'DESKTOP-F6ONNM9', ip: '9.85.83.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49247}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\AMRITA~1\AppData\Local\Temp\scoped_dir11020_9449}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cb80468b374489f01976db5137f25bdc
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57452}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\AMRITA~1\AppData\Local\Temp\scoped_dir10168_30683}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6d8c90fd755a8894094aa54704df097b
 *** Element info: {Using=xpath, value=//*[@id="resetpass-button"]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -98,15 +98,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="tearDown" is-config="true" duration-ms="1003" started-at="2018-12-21T10:48:13Z" finished-at="2018-12-21T10:48:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="tearDown" is-config="true" duration-ms="1000" started-at="2018-12-22T10:34:23Z" finished-at="2018-12-22T10:34:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="validTest()[pri:3, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="validTest" duration-ms="4842" started-at="2018-12-21T10:48:14Z" finished-at="2018-12-21T10:48:19Z">
+        <test-method status="PASS" signature="validTest()[pri:3, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="validTest" duration-ms="4883" started-at="2018-12-22T10:34:24Z" finished-at="2018-12-22T10:34:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="tearDown" is-config="true" duration-ms="1001" started-at="2018-12-21T10:48:19Z" finished-at="2018-12-21T10:48:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_003@77caeb3e]" name="tearDown" is-config="true" duration-ms="1000" started-at="2018-12-22T10:34:29Z" finished-at="2018-12-22T10:34:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
