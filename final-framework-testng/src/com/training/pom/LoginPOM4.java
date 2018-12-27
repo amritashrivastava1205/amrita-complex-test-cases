@@ -1,5 +1,5 @@
-package com.training.pom;
 
+package com.training.pom;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -35,13 +35,14 @@ public class LoginPOM4 {
 	@FindBy(id="phone")
 	private WebElement phone;
 	
-	@FindBy(xpath="//*[@id=\"agent_title\"]")
+	@FindBy(xpath="//*[@id=\"edit_user\"]/label[3]")
 	private WebElement agenttitle;
 	
 		
 	@FindBy(xpath="//*[@id=\"edit_user\"]")
 	private WebElement savechanges;
 
+	
 	public void clicklogin() {
 		// TODO Auto-generated method stub
 			this.login.click();
@@ -58,10 +59,9 @@ public class LoginPOM4 {
 		// TODO Auto-generated method stub
 			this.signin.click();
 	}
-	@SuppressWarnings("null")
+	
 	public void mouseoverOnHiamritalink() {
-		
-	Actions action = null;
+		Actions action = new Actions(driver);
 		action.moveToElement(this.Hiamritalink).click().build().perform();
 	}	
 
@@ -70,25 +70,25 @@ public class LoginPOM4 {
 		this.myprofile.click();
 	}
 	
+		
 
-
-public void sendagenttitle(String login2) {
-	// TODO Auto-generated method stub
-	
-	this.agenttitle.sendKeys("test1234");
-	
-	System.out.println("test1234");
-}
 
 public void sendphone(String login) {
-	this.phone.clear();
-	this.phone.sendKeys("1234567990");
-	System.out.println("1234567990");
+	this.phone.click();
+	this.phone.sendKeys(login);
+	
 	}	
 
 public void clicksavechanges() {
-	this.savechanges.clear();
+	//this.savechanges.clear();
 	this.savechanges.click();
+}
+
+public void sendagenttitle(String string) {
+	// TODO Auto-generated method stub
+	 Actions act=new Actions(driver);
+	 act.moveToElement(agenttitle).click().build().perform();
+	 	this.agenttitle.sendKeys();
 }
 
 }

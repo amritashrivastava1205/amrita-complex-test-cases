@@ -37,21 +37,16 @@ public class RETC_005 {
 	driver.get(baseUrl);
 	
 	}
-	@Test
+	@Test(priority=1)
 	public void validLoginTest() {
 		loginpom5.clicklogin();
-		loginpom5.sendusername("angmail1@rediffmail.com");
-		loginpom5.sendpassword("12345678901!");
+		loginpom5.sendusername("admin");
+		loginpom5.sendpassword("admin@123");
 		loginpom5.clicksignin();
-	   	   loginpom5.clickchangepasswordlink();
-	    loginpom5.sendcurrentpassword("12345678901!");
-	    loginpom5.sendnewpassword("123456789011!");
-	    loginpom5.sendconfirmnewpassword("123456789011!");
-	    loginpom5.clicksavechanges();
+	 
 	    
 	}
-		
-		
+			
 		
 	@AfterMethod
 	public void tearDown() throws Exception {

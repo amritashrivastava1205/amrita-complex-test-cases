@@ -51,11 +51,11 @@ public class LoginPOM5 {
 	}
 
 	public void sendusername(String login) {
-	username.sendKeys("angmail1@rediffmail.com");
+	username.sendKeys("amrita.shrivastava1980@gmail.com");
 	}	
 	public void sendpassword(String login) {
 		this.password.clear();
-		this.password.sendKeys("12345678901!");
+		this.password.sendKeys("godisthere12");
 	}
 	public void clicksignin() {
 		// TODO Auto-generated method stub
@@ -74,13 +74,13 @@ public class LoginPOM5 {
 		this.changepasswordlink.click();
 	}
 	public void sendcurrentpassword(String login1) {
-		this.currentpassword.sendKeys("12345678901!");
+		this.currentpassword.sendKeys("godisthere12");
 	}
 	public void sendnewpassword(String login2) {
-		this.newpassword.sendKeys("123456789011!");
+		this.newpassword.sendKeys("godisthere125");
 	}
 	public void sendconfirmnewpassword(String login3) {
-		this.confirmnewpassword.sendKeys("123456789011!");
+		this.confirmnewpassword.sendKeys("godisthere125");
 	}
 	
 	public void clicksavechanges() {

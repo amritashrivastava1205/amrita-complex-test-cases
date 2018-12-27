@@ -60,7 +60,7 @@ public class LoginPOM3 {
 		public void sendnewpassword(String string) {
 			// TODO Auto-generated method stub
 				this.newpassword.clear();
-			this.newpassword.sendKeys("pass12345678");
+			this.newpassword.sendKeys("1234567890113!");
 		 
 		}
 
@@ -68,7 +68,7 @@ public class LoginPOM3 {
 		public void sendrepeatnewpassword(String string) {
 			// TODO Auto-generated method stub
 				this.repeatnewpassword.clear();
-			this.repeatnewpassword.sendKeys("pass12345678");
+			this.repeatnewpassword.sendKeys("1234567890113!");
 		}
 		
 				

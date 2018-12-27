@@ -48,9 +48,9 @@ public class RETC_003 {
 	}
 	@Test(priority=3)
 	public void validTest() {
-		driver.get("http://realestate.hommelle.com/reset-password/?login=angmail1%40rediffmail.com&key=Aj4VzMs2cSNlt13fgweUUrl");
-		loginpom3.sendnewpassword("pass12345678!");
-		loginpom3.sendrepeatnewpassword("pass12345678!");
+		driver.get("http://realestate.hommelle.com/wp-login.php?action=rp&key=8cmf4kFvyAj2NagKCSdM&login=angmail1%40rediffmail.com");
+		loginpom3.sendnewpassword("1234567890113!");
+		loginpom3.sendrepeatnewpassword("1234567890113!");
 		loginpom3.clicksubmit();
 		
 			}
