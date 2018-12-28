@@ -21,7 +21,7 @@ public class RETC_031 {
 	
 
 	private WebDriver driver;
-	private String baseUrl;
+	private String adminUrl;
 	private LoginPOM031 loginPOM031;
 	private static Properties properties;
 	private ScreenShot screenShot;
@@ -34,15 +34,15 @@ public class RETC_031 {
 	properties.load(inStream);
 	driver = DriverFactory.getDriver(DriverNames.CHROME);
 	loginPOM031 = new LoginPOM031(driver);
-	baseUrl = properties.getProperty("baseURL");
+	adminUrl = properties.getProperty("adminURL");
 	
 	screenShot = new ScreenShot(driver);
 	// open the browser
-	driver.get(baseUrl);
+	driver.get(adminUrl);
 	
 	}
 	@Test(priority=1)
-	public void validLoginTest() throws AWTException  {
+	public void validLoginTest() throws AWTException {
 		loginPOM031.clickusername();
 		loginPOM031.sendusername("admin");
 		loginPOM031.clickpassword();		
@@ -69,6 +69,7 @@ public class RETC_031 {
 		loginPOM031.sendstorageroom("2");
 		loginPOM031.clickcentralbangalorecheckbox();
 				loginPOM031.clickpublish();
+				
 		}
 		
 			 		
