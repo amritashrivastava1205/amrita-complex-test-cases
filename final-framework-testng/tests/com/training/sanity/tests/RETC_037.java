@@ -1,4 +1,7 @@
 package com.training.sanity.tests;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Iterator;
@@ -43,7 +46,7 @@ public class RETC_037 {
 	  
 	}
 	@Test
-	public void validLoginTest() throws InterruptedException  {
+	public void validLoginTest() throws InterruptedException, AWTException  {
 		loginPOM037.clicklogin();
 		loginPOM037.sendusername("nigam_0218@rediffmail.com");
 		loginPOM037.sendpassword("SjQjlJYAHDll");		
@@ -69,9 +72,13 @@ public class RETC_037 {
 	  loginPOM037.sendsubject("apartment");
 	  loginPOM037.sendmessage("looking for apartment");
 	  loginPOM037.clicksend();
+	  Robot robot = new Robot();
+	  robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+	  robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
 	  
+	   }
 	   
-		}
+		
 	
 	@AfterMethod
 	public void tearDown() throws Exception {
