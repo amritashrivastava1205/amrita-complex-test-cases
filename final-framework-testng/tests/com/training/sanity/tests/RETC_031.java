@@ -1,11 +1,13 @@
 package com.training.sanity.tests;
 
 import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -33,6 +35,8 @@ public class RETC_031 {
 	FileInputStream inStream = new FileInputStream("./resources/others.properties");
 	properties.load(inStream);
 	driver = DriverFactory.getDriver(DriverNames.CHROME);
+	 JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 	loginPOM031 = new LoginPOM031(driver);
 	adminUrl = properties.getProperty("adminURL");
 	
@@ -42,7 +46,7 @@ public class RETC_031 {
 	
 	}
 	@Test(priority=1)
-	public void validLoginTest() throws AWTException {
+	public void validLoginTest() throws AWTException, InterruptedException {
 		loginPOM031.clickusername();
 		loginPOM031.sendusername("admin");
 		loginPOM031.clickpassword();		
@@ -50,9 +54,9 @@ public class RETC_031 {
 		loginPOM031.clicksignin();
 		loginPOM031.clickpropertieslink();
 		loginPOM031.addnewlink();
-		loginPOM031.sendentertitlehere("new launch");
+		loginPOM031.sendentertitlehere("NEWYEAR");
 		loginPOM031.clicktextbox();
-		loginPOM031.sendeditorarea("new launch");
+		loginPOM031.sendeditorarea("NEWYEAR");
 		loginPOM031.clickprice();
 		loginPOM031.sendpricetextbox("50000.00") ;
 		loginPOM031.sendpricepersqmetertextbox("200.00");
@@ -67,13 +71,28 @@ public class RETC_031 {
 		loginPOM031.sendlongitude("56");
 		loginPOM031.clickdetailstab();
 		loginPOM031.sendstorageroom("2");
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+		 robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
 		loginPOM031.clickcentralbangalorecheckbox();
-				loginPOM031.clickpublish();
+		Thread.sleep(7000);
+		// This  will scroll up the page by  1000 pixel 
+		
+		robot.keyPress(KeyEvent.VK_PAGE_UP);
+		 robot.keyRelease(KeyEvent.VK_PAGE_UP);
+     // JavascriptExecutor js; executeScript("window.scrollBy(0,-2000)");
+	
+		loginPOM031.clickpublish();
 				
 		}
 		
 			 		
 	
+	
+	private void executeScript(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);

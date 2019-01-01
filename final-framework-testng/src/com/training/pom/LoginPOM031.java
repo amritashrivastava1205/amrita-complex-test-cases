@@ -2,6 +2,8 @@ package com.training.pom;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,6 +15,7 @@ public class LoginPOM031 {
 	private static final String waituntilExpectedcondition=null ;
 
 	private WebDriver driver; 
+	private JavascriptExecutor je ;
 		
 	public LoginPOM031(WebDriver driver) {
 		this.driver = driver; 
@@ -89,11 +92,9 @@ public class LoginPOM031 {
 	@FindBy(xpath="//*[@id=\"_storage_room\"]")
 	private WebElement storageroom;
 	
-	@FindBy(xpath="//*[@id=\"acf-group_5aa6786492979\"]/div/div/div[2]/div/div[2]/ul/li[15]/ul/li[1]/label/span")
+	@FindBy(xpath="//*[@id=\"acf-group_5aa6786492979\"]/div/div/div[2]/div/div[2]/ul/li[1]/ul/li[1]/label/span")
 	private WebElement centralbangalorecheckbox;
 		
-		@FindBy(id="submitpost")
-		private WebElement publish;		
 		
 	public void clickusername()  {
 		     this.username.click();
@@ -204,12 +205,18 @@ public void clickcentralbangalorecheckbox() {
 	centralbangalorecheckbox.click();
 	centralbangalorecheckbox.isSelected();
 }
-public void clickpublish() throws AWTException {
-Robot robot = new Robot();
-robot.keyPress(KeyEvent.VK_PAGE_UP);
-robot.keyRelease(KeyEvent.VK_PAGE_UP);
-this.publish.click();
- }
+
+//Click on Publish button
+	public void clickpublish() {
+		// TODO Auto-generated method stub
+		this.publish.click();
+	}
+
+@FindBy(xpath = "//input[@id='publish']")
+private WebElement publish;
+
+
+
 }
 
 
