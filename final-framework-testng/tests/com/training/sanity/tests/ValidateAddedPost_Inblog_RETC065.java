@@ -80,15 +80,11 @@ public class ValidateAddedPost_Inblog_RETC065 {
 	  	System.out.println("Category checkbox is clicked");
 	  Thread.sleep(7000);
 	  	verifyaddedpostinblogPOM065.clickpublish(); //admin clicked on publish
-	  	
-	  	System.out.println("Publish bttn is clicked");
-	  
-	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
-	  	  
-	  		  	 
+	  		  	System.out.println("Publish bttn is clicked");
+	  	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
+	  	  	  		  	 
 	  	verifyaddedpostinblogPOM065.mouseoverhowdyadminlink(); 
-	  	
-	  	verifyaddedpostinblogPOM065.clicklogout();//admin loggedout successfully by clicking logout
+	  		  	verifyaddedpostinblogPOM065.clicklogout();//admin loggedout successfully by clicking logout
 	  	System.out.println("logout option is clicked");
 	  verifyaddedpostinblogPOM065.clickrealestatelink();//admin clicks on home link from My profile page
 	  	System.out.println("realestate link is clicked");
