@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor ;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -58,11 +59,11 @@ public class ValidateAddedPost_Inblog_RETC065 {
 	    System.out.println("At Dashboard page mouse overed postslink");//admin came to Dashboard page and mouseovered posts link
 	    verifyaddedpostinblogPOM065.clickcategories();//admin clicked on categories
 	    System.out.println("category is selected");
-	    verifyaddedpostinblogPOM065.sendname("Micky mouse");//admin entered name
+	    verifyaddedpostinblogPOM065.sendname("Engine");//admin entered name
 	    System.out.println("name is entered");
-	    verifyaddedpostinblogPOM065.sendslug("Happy Merry");//admin entered slug details
+	    verifyaddedpostinblogPOM065.sendslug("Happy New motor");//admin entered slug details
 	    System.out.println("slug is entered");
-	    verifyaddedpostinblogPOM065.senddescription("Wish you all a very Happy New Year 2019");
+	    verifyaddedpostinblogPOM065.senddescription("Car");
 	    System.out.println("description is entered");//admin entered description
 	    verifyaddedpostinblogPOM065.clickaddnewcategorybttn();
 	    System.out.println("Add newcategorybuttonis clicked");//admin clicked on add new category button
@@ -77,25 +78,25 @@ public class ValidateAddedPost_Inblog_RETC065 {
 	  	System.out.println("Text is entered in body textbox");
 	  	verifyaddedpostinblogPOM065.clickcategorycheckbox(); //admin checked the category checkbox
 	  	System.out.println("Category checkbox is clicked");
+	  Thread.sleep(7000);
 	  	verifyaddedpostinblogPOM065.clickpublish(); //admin clicked on publish
-	  	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  	
 	  	System.out.println("Publish bttn is clicked");
 	  
-	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
-	  	//WebDriverWait wait = new WebDriverWait(driver,10000);
-	  	//WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("wp-admin-bar-my-account")));
-	  	
+	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
+	  	  
+	  		  	 
 	  	verifyaddedpostinblogPOM065.mouseoverhowdyadminlink(); 
 	  	
 	  	verifyaddedpostinblogPOM065.clicklogout();//admin loggedout successfully by clicking logout
 	  	System.out.println("logout option is clicked");
-	  	verifyaddedpostinblogPOM065.clickrealestatelink();//admin clicks on home link from My profile page
+	  verifyaddedpostinblogPOM065.clickrealestatelink();//admin clicks on home link from My profile page
 	  	System.out.println("realestate link is clicked");
 	  	verifyaddedpostinblogPOM065.clickblog();//admin clicks on blog at Home page
 	  	System.out.println("blog option is clicked");
 	  	Robot robot = new Robot();
 		   robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-			  robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+			 robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
 	  	
 	  	
 	  	
@@ -104,7 +105,7 @@ public class ValidateAddedPost_Inblog_RETC065 {
   
 	@AfterMethod
 	public void tearDown() throws Exception {
-		//Thread.sleep(1000);
+		
 		
 		//driver.quit();
 	

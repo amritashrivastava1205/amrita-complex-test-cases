@@ -69,6 +69,8 @@ public class VerifyaddedpostinblogPOM065 {
 		@FindBy(xpath=("//*[@id=\"wp-admin-bar-top-secondary\"]"))
 		private WebElement howdyadminlink;
 		
+	
+		
 			
 		//WebDriverWait wait = new WebDriverWait(driver,700);
 	  	//WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id="wp-admin-bar-user-actions"]")));	 
