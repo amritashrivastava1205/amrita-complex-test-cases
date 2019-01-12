@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import com.training.bean.DBBean;
+import com.training.bean.RealestateBean;
 
 /**
  * 
@@ -14,22 +14,22 @@ import com.training.bean.DBBean;
  * @see will load the db details and shall be used in connection class
  */
 public class LoadDBDetails {
-	public static DBBean getDBDetails() {
+	public static RealestateBean getDBDetails() {
 
 		try {
 			Properties properties = new Properties();
 			FileInputStream inStream = new FileInputStream("./resources/db.properties");
 			properties.load(inStream);
 
-			DBBean dbBean = new DBBean(); 
+			RealestateBean	realestateBean = new RealestateBean(); 
 			
-			dbBean.setUrl(properties.getProperty("url"));
-			dbBean.setDriver(properties.getProperty("driver"));
+			realestateBean.setUrl(properties.getProperty("url"));
+			realestateBean.setDriver(properties.getProperty("driver"));
 			// getting the user name if not present (by default - root ) 
-			dbBean.setUserName(properties.getProperty("username", "root"));
-			dbBean.setPassword(properties.getProperty("password"));
+			//realestateBean.setUserName(properties.getProperty("username", "root"));
 			
-			return dbBean; 
+			
+			return realestateBean; 
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

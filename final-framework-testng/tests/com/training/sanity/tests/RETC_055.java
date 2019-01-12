@@ -52,7 +52,7 @@ public class RETC_055 {
 	    loginPOM055.clickaddnew();
 	   
 	    loginPOM055.clickaddnewcategorylink();
-	    loginPOM055.sendaddnewcategorytextbox("final");
+	    loginPOM055.sendaddnewcategorytextbox("finalgoal");
 	    loginPOM055.selectparentcategory1ByIndex(10);
 	        
 	   loginPOM055.clickaddnewcategorybttn(); 

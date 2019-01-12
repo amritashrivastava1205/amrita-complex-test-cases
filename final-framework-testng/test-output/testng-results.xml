@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76039" started-at="2019-01-01T10:20:17Z" finished-at="2019-01-01T10:21:33Z">
+  <suite name="Default suite" duration-ms="96200" started-at="2019-01-12T10:33:31Z" finished-at="2019-01-12T10:35:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76039" started-at="2019-01-01T10:20:17Z" finished-at="2019-01-01T10:21:33Z">
-      <class name="com.training.sanity.tests.RETC_049">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RETC_049@77caeb3e]" name="setUpBeforeClass" is-config="true" duration-ms="46621" started-at="2019-01-01T10:20:17Z" finished-at="2019-01-01T10:21:03Z">
+    <test name="Default test" duration-ms="96200" started-at="2019-01-12T10:33:31Z" finished-at="2019-01-12T10:35:08Z">
+      <class name="com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065@604ed9f0]" name="setUpBeforeClass" is-config="true" duration-ms="22955" started-at="2019-01-12T10:33:31Z" finished-at="2019-01-12T10:33:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.RETC_049@77caeb3e]" name="validLoginTest" duration-ms="28371" started-at="2019-01-01T10:21:03Z" finished-at="2019-01-01T10:21:32Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065@604ed9f0]" name="validLoginTest" duration-ms="73168" started-at="2019-01-12T10:33:54Z" finished-at="2019-01-12T10:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_049@77caeb3e]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-01-01T10:21:32Z" finished-at="2019-01-01T10:21:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065@604ed9f0]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-01-12T10:35:08Z" finished-at="2019-01-12T10:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.RETC_049 -->
+      </class> <!-- com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
