@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -36,10 +37,12 @@ public class RETC_002 {
 	}
 	@Test
 	public void validLoginTest() {
+	
 		loginpom2.clicklogin();
 		loginpom2.sendusername("manzoor@gmail.com");
 		loginpom2.sendpassword("manzoor");
 		loginpom2.clicksignin();
+		
 		
 				}
 	

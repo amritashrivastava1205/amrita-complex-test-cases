@@ -39,6 +39,7 @@ public class DBBean {
 
 	public void getUserName() {
 		
+		
 	}
 
 	public void setUserName(String userName) {

@@ -10,15 +10,22 @@ public class RealestateBean {
 	public RealestateBean() {
 	}
 
-	public RealestateBean(String email, String firstname, String lastname) {
+	public RealestateBean(String driver, String url, String email, String firstname, String lastname) {
 		super();
-		
-		this.url = url;
-		this.driver = driver;
+		this.driver=driver;
+		this.url=url;
 		this.email = email;
 		this.firstname = firstname;
 		this.lastname = lastname;
 			
+	}
+	
+	public String getDriver() {
+		return driver;
+	}
+
+	public void setDriver(String driver) {
+		this.driver = driver;
 	}
 
 	public String getUrl() {
@@ -28,14 +35,7 @@ public class RealestateBean {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-
-	public String getDriver() {
-		return driver;
-	}
-
-	public void setDriver(String driver) {
-		this.driver = driver;
-	}
+	
     public String getemail() {
 		return email;
 		
@@ -66,11 +66,8 @@ public class RealestateBean {
 	
 	@Override
 	public String toString() {
-		return "RealestateBean [email=" + email + ", firstname=" + firstname + ", lastname="  + lastname+ ""; 
+		return "RealestateBean [email=" + email + ", firstname=" + firstname + ", lastname="  + lastname+ "]"; 
 	}
-
-	
-	
 
 	
 

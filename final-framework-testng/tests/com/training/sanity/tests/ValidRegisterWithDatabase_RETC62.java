@@ -9,10 +9,13 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
   import org.openqa.selenium.By;
   import org.openqa.selenium.WebDriver;
- import java.sql.Connection;
+import org.openqa.selenium.WebElement;
+
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -29,7 +32,7 @@ import com.training.pom.RegisterPOMusingdatabaseRETC_062;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-import org.testng.annotations.DataProvider;
+
  
 
  public class ValidRegisterWithDatabase_RETC62 {
@@ -53,6 +56,7 @@ import org.testng.annotations.DataProvider;
 	
 	
 	
+	
 	 //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	screenShot = new ScreenShot(driver);
 	
@@ -72,23 +76,49 @@ import org.testng.annotations.DataProvider;
 		 System.out.println("registerlink is clicked");
 	       
 	 
-		 registerPOMusingdatabaseRETC_062.sendemail("(amrita@gmail.com");
+		 registerPOMusingdatabaseRETC_062.sendemail("amrita@gmail.com");
 	 
 	   System.out.println("email is entered");
-	 
-	   registerPOMusingdatabaseRETC_062.sendfirstname("amrita");
+	   String Actualtext = driver.findElement(By.name("email")).getAttribute("value");
+		 Assert.assertEquals(Actualtext, "amrita@gmail.com");
+		 System.out.println("Values of Email Matched");
+	   
+	 registerPOMusingdatabaseRETC_062.sendfirstname("amrita");
 	 
 	 System.out.println("firstname is entered");
+	 
+	 String Actualtext2 = driver.findElement(By.xpath("//*[@id=\"first-name\"]")).getAttribute("value");
+	 Assert.assertEquals(Actualtext2,"amrita");
+	 System.out.print("Values of First Name Matched");
+	 
 	 
 	 registerPOMusingdatabaseRETC_062.sendlastname("nigam");
 	 
 	 System.out.println("lastname is entered");
+	 
+	 String Actualtext3 = driver.findElement(By.xpath("//*[@id=\"last-name\"]")).getAttribute("value");
+	 Assert.assertEquals(Actualtext3, "nigam");
+	 System.out.print("Values of Last Name Matched");
+	 
+	 
 	 
 	 registerPOMusingdatabaseRETC_062.clickregisterbttn();
 	  
 	 System.out.println("registerbttn is clicked");
 	 
 	 }
-	 
+	
+
+ 
+
+	@AfterMethod
+	public void tearDown() throws Exception {
+		//Thread.sleep(1000);
+		
+		driver.quit();
 	}
+}
+
+	 
+	
 	

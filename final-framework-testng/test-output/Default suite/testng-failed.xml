@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065">
+      <class name="com.training.sanity.tests.ValidRegisterWithDatabase_RETC62">
         <methods>
+          <include name="verifyRegistrationdataindatabasetest"/>
           <include name="tearDown"/>
-          <include name="validLoginTest"/>
           <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065 -->
+      </class> <!-- com.training.sanity.tests.ValidRegisterWithDatabase_RETC62 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

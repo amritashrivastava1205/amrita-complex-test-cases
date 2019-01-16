@@ -2,24 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="96200" started-at="2019-01-12T10:33:31Z" finished-at="2019-01-12T10:35:08Z">
+  <suite name="Default suite" duration-ms="44759" started-at="2019-01-16T22:26:33Z" finished-at="2019-01-16T22:27:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="96200" started-at="2019-01-12T10:33:31Z" finished-at="2019-01-12T10:35:08Z">
-      <class name="com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065@604ed9f0]" name="setUpBeforeClass" is-config="true" duration-ms="22955" started-at="2019-01-12T10:33:31Z" finished-at="2019-01-12T10:33:54Z">
+    <test name="Default test" duration-ms="44759" started-at="2019-01-16T22:26:33Z" finished-at="2019-01-16T22:27:18Z">
+      <class name="com.training.sanity.tests.ValidRegisterWithDatabase_RETC62">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ValidRegisterWithDatabase_RETC62@6a4f787b]" name="setUpBeforeClass" is-config="true" duration-ms="36349" started-at="2019-01-16T22:26:33Z" finished-at="2019-01-16T22:27:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065@604ed9f0]" name="validLoginTest" duration-ms="73168" started-at="2019-01-12T10:33:54Z" finished-at="2019-01-12T10:35:08Z">
+        <test-method status="PASS" signature="verifyRegistrationdataindatabasetest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.training.sanity.tests.ValidRegisterWithDatabase_RETC62@6a4f787b]" name="verifyRegistrationdataindatabasetest" duration-ms="5650" started-at="2019-01-16T22:27:11Z" data-provider="db-inputs" finished-at="2019-01-16T22:27:17Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065@604ed9f0]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-01-12T10:35:08Z" finished-at="2019-01-12T10:35:08Z">
+        </test-method> <!-- verifyRegistrationdataindatabasetest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ValidRegisterWithDatabase_RETC62@6a4f787b]" name="tearDown" is-config="true" duration-ms="985" started-at="2019-01-16T22:27:17Z" finished-at="2019-01-16T22:27:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.ValidateAddedPost_Inblog_RETC065 -->
+      </class> <!-- com.training.sanity.tests.ValidRegisterWithDatabase_RETC62 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

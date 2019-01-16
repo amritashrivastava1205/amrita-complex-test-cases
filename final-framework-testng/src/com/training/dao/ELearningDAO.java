@@ -32,7 +32,7 @@ public class ELearningDAO {
 		GetConnection gc  = new GetConnection(); 
 		List<LoginBean> list = null;
 		try {
-			gc.ps1 = GetConnection.getMySqlConnection(LoadDBDetails.getDBDetails()).prepareStatement(sql); 
+			gc.ps1 = GetConnection.getOracleConnection(LoadDBDetails.getDBDetails()).prepareStatement(sql); 
 			list = new ArrayList<LoginBean>(); 
 			
 			gc.rs1 = gc.ps1.executeQuery(); 

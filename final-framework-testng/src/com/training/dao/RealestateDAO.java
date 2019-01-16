@@ -27,13 +27,13 @@ public class RealestateDAO {
 		}
 	}
 	
-	public List<RealestateBean> getLogins(){
-		String sql = properties.getProperty("get.logins"); 
+	public List<RealestateBean> getRelestateBean(){
+		String sql = properties.getProperty("get.TableCredentialsregister"); 
 		
 		GetConnection gc  = new GetConnection(); 
 		List<RealestateBean> list = null;
 		try {
-			gc.ps1 = GetConnection.getMSAccess(LoadDBDetails.getDBDetails()).prepareStatement(sql); 
+			gc.ps1 = GetConnection.getUCanAccess(LoadDBDetails.getDBDetails()).prepareStatement(sql); 
 			list = new ArrayList<RealestateBean>(); 
 			
 			gc.rs1 = gc.ps1.executeQuery(); 
@@ -57,10 +57,14 @@ public class RealestateDAO {
 	}
 	
 	public static void main(String[] args) {
-		new RealestateDAO().getLogins().forEach(System.out :: println);
+		new RealestateDAO().getRelestateBean().forEach(System.out :: println);
 	}
+
+	
+
+}
 
 	
 	
 	
-}
+
